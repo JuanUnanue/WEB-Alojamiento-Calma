@@ -3,272 +3,383 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alojamiento Calma — Mar del Plata</title>
-  <meta name="description" content="Departamentos para 2 personas en el corazón de Mar del Plata. Ambiente cálido, minimalista y equipado al detalle. Reservas por WhatsApp." />
+  <title>Alojamiento Calma · Mar del Plata</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌊</text></svg>" />
+  <meta name="description" content="Alojamiento Calma — dos departamentos únicos en Mar del Plata. Reservá por WhatsApp." />
 
-  <!-- Google Fonts -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
   <!-- AOS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 
-  <!-- Estilos propios -->
+  <!-- Styles -->
   <link rel="stylesheet" href="styles.css" />
-
 </head>
 <body>
 
-  <!-- ── NAVBAR ─────────────────────────────────────────────── -->
+  <!-- ═══════════════════════════ NAVBAR ═══════════════════════════ -->
   <nav id="navbar">
-    <div class="container nav-inner">
-      <a href="#hero" class="nav-logo">
-        <!-- Triskelion SVG -->
-        <svg class="triskelion" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-          <path d="M50 50
-            C50 50 50 28 62 22 C74 16 84 26 78 38 C72 50 58 46 50 50
-            C50 50 68 58 68 72 C68 86 54 90 46 80 C38 70 46 56 50 50
-            C50 50 32 56 22 46 C12 36 20 22 34 24 C48 26 48 42 50 50Z"
-            fill-rule="evenodd"/>
-        </svg>
-        <div class="nav-logo-text">
-          calma<span>alojamiento · mdp</span>
-        </div>
+    <div class="nav-inner">
+      <a class="nav-logo" href="#inicio">
+        <img src="images/logo.png" alt="Alojamiento Calma" class="nav-logo-img" />
       </a>
-
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#about">Nosotros</a></li>
-        <li><a href="#amenities">Comodidades</a></li>
-        <li><a href="#gallery">Galería</a></li>
-        <li><a href="#location">Ubicación</a></li>
-        <li><a href="#booking" class="nav-cta">Reservar</a></li>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#departamentos">Departamentos</a></li>
+        <li><a href="#ubicacion">Ubicación</a></li>
+        <li><a href="#reservar" class="nav-cta">Reservar</a></li>
       </ul>
-
       <button class="nav-toggle" id="navToggle" aria-label="Menú">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 
-  <!-- ── HERO ───────────────────────────────────────────────── -->
-  <section id="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-content">
-      <div class="hero-badge">
-        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-        Mar del Plata, Argentina
-      </div>
-      <h1 class="hero-title">Alojamiento<br><em>Calma</em></h1>
-      <p class="hero-tagline">Tu refugio frente al mar</p>
+  <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+  <section class="hero" id="inicio">
+    <div class="hero-slides">
+      <div class="hero-slide active" style="background-image:url('images/mdp/IMG_0384.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('images/mdp/IMG_1296.JPG')"></div>
+      <div class="hero-slide" style="background-image:url('images/mdp/IMG_3058.JPG')"></div>
+      <div class="hero-slide" style="background-image:url('images/mdp/IMG_3992.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('images/mdp/IMG_4048.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('images/mdp/IMG_4058.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('images/mdp/IMG_6951.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('images/mdp/IMG_9637.jpg')"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content" data-aos="fade-up" data-aos-delay="100">
+      <p class="hero-eyebrow">Mar del Plata · Argentina</p>
+      <h1 class="hero-title">Encontrá tu<br /><em>lugar de calma</em></h1>
+      <p class="hero-sub">Dos departamentos únicos a pasos del mar,<br />diseñados para descansar de verdad.</p>
       <div class="hero-actions">
-        <a href="#booking" class="btn-primary">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M5.077 19.877c.247 0 .495-.024.741-.072 1.38-.27 2.573-.969 3.46-1.908l.075-.08c.198-.21.396-.42.569-.638.18-.22.347-.443.5-.668a8.36 8.36 0 0 0 .447-.748c.545-1.073.82-2.284.82-3.567 0-4.463-3.63-8.093-8.093-8.093-4.462 0-8.092 3.63-8.092 8.093 0 1.395.362 2.758 1.048 3.956l-1.098 3.938a.502.502 0 0 0 .619.62l3.979-1.058a8.08 8.08 0 0 0 4.025 1.224z" opacity=".3"/></svg>
-          Reservar por WhatsApp
-        </a>
-        <a href="#about" class="btn-secondary">
-          Conocer más
-        </a>
+        <a href="#departamentos" class="btn btn-primary">Ver departamentos</a>
+        <a href="#reservar" class="btn btn-outline">Reservar ahora</a>
       </div>
     </div>
-    <div class="hero-scroll">
-      <span>Scroll</span>
-      <div class="hero-scroll-line"></div>
-    </div>
+    <div class="hero-dots" id="heroDots"></div>
+    <a href="#nosotros" class="hero-scroll" aria-label="Scroll">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </a>
   </section>
 
-  <!-- ── STATS ───────────────────────────────────────────────── -->
-  <div id="stats">
-    <div class="container">
-      <div class="stats-grid">
-        <div class="stat-item" data-aos="fade-up" data-aos-delay="0">
-          <div class="stat-number">2</div>
-          <div class="stat-label">Departamentos</div>
-        </div>
-        <div class="stat-item" data-aos="fade-up" data-aos-delay="80">
-          <div class="stat-number">2</div>
-          <div class="stat-label">Personas máx.</div>
-        </div>
-        <div class="stat-item" data-aos="fade-up" data-aos-delay="160">
-          <div class="stat-number">2+</div>
-          <div class="stat-label">Cuadras al mar</div>
-        </div>
-        <div class="stat-item" data-aos="fade-up" data-aos-delay="240">
-          <div class="stat-number">100%</div>
-          <div class="stat-label">Equipado</div>
-        </div>
-      </div>
+  <!-- ═══════════════════════════ STATS ═══════════════════════════ -->
+  <div class="stats-bar">
+    <div class="stat" data-aos="fade-up" data-aos-delay="0">
+      <span class="stat-num">2</span>
+      <span class="stat-label">Departamentos únicos</span>
+    </div>
+    <div class="stat" data-aos="fade-up" data-aos-delay="100">
+      <span class="stat-num">100m</span>
+      <span class="stat-label">De la playa</span>
+    </div>
+    <div class="stat" data-aos="fade-up" data-aos-delay="200">
+      <span class="stat-num">★ 5</span>
+      <span class="stat-label">Estrellas en reseñas</span>
+    </div>
+    <div class="stat" data-aos="fade-up" data-aos-delay="300">
+      <span class="stat-num">24/7</span>
+      <span class="stat-label">Atención personalizada</span>
     </div>
   </div>
 
-  <!-- ── ABOUT ──────────────────────────────────────────────── -->
-  <section id="about">
+  <!-- ═══════════════════════════ NOSOTROS ═══════════════════════════ -->
+  <section class="about" id="nosotros">
     <div class="container">
       <div class="about-grid">
-        <div class="about-visual" data-aos="fade-right">
+        <div class="about-images" data-aos="fade-right">
           <div class="about-img-main">
-            <div class="gallery-placeholder" style="height:100%">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-              <span>Foto del depto</span>
-            </div>
+            <img src="images/aloj1/IMG_6418.JPG" alt="Calma 1 — sala principal" />
           </div>
-          <div class="about-img-accent">
-            <div class="gallery-placeholder">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-            </div>
+          <div class="about-img-secondary">
+            <img src="images/aloj2/IMG_4345.JPG" alt="Calma 2 — ambiente" />
           </div>
-          <span class="about-pill-badge">✦ Mar del Plata</span>
         </div>
-
         <div class="about-text" data-aos="fade-left" data-aos-delay="100">
-          <span class="section-label">Sobre nosotros</span>
-          <h2 class="section-title">Un espacio pensado para vos</h2>
-          <blockquote class="about-quote">
-            "Llegar, descansar y desconectarse del ruido del mundo."
-          </blockquote>
-          <p class="about-body">
-            Alojamiento Calma son dos departamentos diseñados para parejas que buscan una escapada tranquila en el corazón de Mar del Plata. Espacios luminosos, minimalistas y cálidos, con todo lo que necesitás para sentirte como en casa — o mejor.
-          </p>
-          <p class="about-body">
-            A dos cuadras del Casino Central, de la rambla de los lobos marinos y de la Av. Colón. A pocos pasos del shopping Aldrey y el paseo Güemes. Todo cerca, sin el ruido del caos.
-          </p>
-          <div class="about-chips">
-            <span class="chip">🌊 A metros del mar</span>
-            <span class="chip">☀️ Luminoso</span>
-            <span class="chip">🤍 Minimalista</span>
-            <span class="chip">🔑 Check-in flexible</span>
-          </div>
+          <p class="section-eyebrow">Sobre nosotros</p>
+          <h2 class="section-title">Un espacio pensado para el descanso</h2>
+          <p>En Alojamiento Calma creemos que cada estadía tiene que sentirse como en casa, pero con la magia de descubrir Mar del Plata. Dos departamentos totalmente equipados, cada uno con su propia identidad, diseñados con amor por los detalles.</p>
+          <p>Estamos en Falucho y Arenales, en el corazón del barrio Los Troncos — a metros de la playa, rodeados de restaurantes, cafés y todo lo mejor de la ciudad.</p>
+          <a href="#departamentos" class="btn btn-primary" style="margin-top:1.5rem">Conocer los departamentos</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── AMENITIES ──────────────────────────────────────────── -->
-  <section id="amenities">
+  <!-- ═══════════════════════════ AMENITIES ═══════════════════════════ -->
+  <section class="amenities">
     <div class="container">
-      <div class="amenities-header" data-aos="fade-up">
-        <span class="section-label">Todo incluido</span>
-        <h2 class="section-title">Comodidades</h2>
-        <p class="section-subtitle">Cada detalle pensado para que no te falte nada durante tu estadía.</p>
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-eyebrow">Comodidades</p>
+        <h2 class="section-title">Todo lo que necesitás</h2>
       </div>
-
       <div class="amenities-grid">
         <div class="amenity-card" data-aos="fade-up" data-aos-delay="0">
-          <div class="amenity-icon">🛏️</div>
-          <div class="amenity-title">Cama doble</div>
-          <div class="amenity-desc">Cama de dos plazas con sábanas y toallones de calidad incluidos.</div>
+          <div class="amenity-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01M3.157 10.104a11 11 0 0117.686 0M6.5 13.223a7 7 0 0111 0"/></svg>
+          </div>
+          <h3>Wi-Fi de alta velocidad</h3>
+          <p>Conexión fibra óptica en ambos departamentos</p>
         </div>
-        <div class="amenity-card" data-aos="fade-up" data-aos-delay="60">
-          <div class="amenity-icon">🍳</div>
-          <div class="amenity-title">Cocina equipada</div>
-          <div class="amenity-desc">Heladera, horno, microondas, tostadora, pava eléctrica, cafetera y vajilla completa.</div>
+        <div class="amenity-card" data-aos="fade-up" data-aos-delay="50">
+          <div class="amenity-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 17H7A5 5 0 017 7h2M15 7h2a5 5 0 010 10h-2M8 12h8"/></svg>
+          </div>
+          <h3>Smart TV</h3>
+          <p>Televisor inteligente con Netflix y plataformas de streaming</p>
         </div>
-        <div class="amenity-card" data-aos="fade-up" data-aos-delay="120">
-          <div class="amenity-icon">📺</div>
-          <div class="amenity-title">Smart TV 39"</div>
-          <div class="amenity-desc">Con Netflix, Disney+, HBO Max y todas las plataformas de streaming.</div>
+        <div class="amenity-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="amenity-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+          </div>
+          <h3>Ropa de cama y baño</h3>
+          <p>Sábanas premium y toallas incluidas</p>
         </div>
-        <div class="amenity-card" data-aos="fade-up" data-aos-delay="180">
-          <div class="amenity-icon">🥐</div>
-          <div class="amenity-title">Desayuno de bienvenida</div>
-          <div class="amenity-desc">Arribás y te esperamos con desayuno o merienda de bienvenida lista.</div>
+        <div class="amenity-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="amenity-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h.01M9 12h.01M9 15h.01M12 9h.01M12 12h.01M12 15h.01M15 9h.01M15 12h.01M15 15h.01"/></svg>
+          </div>
+          <h3>Cocina completa</h3>
+          <p>Equipada con heladera, microondas, cafetera y utensilios</p>
         </div>
-        <div class="amenity-card" data-aos="fade-up" data-aos-delay="240">
-          <div class="amenity-icon">🚿</div>
-          <div class="amenity-title">Baño completo</div>
-          <div class="amenity-desc">Secador de pelo, shampoo, acondicionador, jabón y discos de algodón.</div>
+        <div class="amenity-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="amenity-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3C7.03 3 3 7.03 3 12s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zM3 12h18"/><path d="M12 3a14.95 14.95 0 014.27 10A14.95 14.95 0 0112 23 14.95 14.95 0 017.73 13 14.95 14.95 0 0112 3z"/></svg>
+          </div>
+          <h3>Aire acondicionado</h3>
+          <p>Frío/calor con control individual en cada ambiente</p>
+        </div>
+        <div class="amenity-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="amenity-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+          </div>
+          <h3>Seguridad</h3>
+          <p>Cerradura digital y edificio con acceso controlado</p>
         </div>
         <div class="amenity-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="amenity-icon">📶</div>
-          <div class="amenity-title">WiFi de alta velocidad</div>
-          <div class="amenity-desc">Conexión estable para que puedas trabajar o conectarte sin problemas.</div>
+          <div class="amenity-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Check-in flexible</h3>
+          <p>Ingreso autónomo disponible las 24 horas</p>
         </div>
-        <div class="amenity-card" data-aos="fade-up" data-aos-delay="360">
-          <div class="amenity-icon">🎲</div>
-          <div class="amenity-title">Juegos de mesa</div>
-          <div class="amenity-desc">Para esas noches adentro que terminan siendo las mejores del viaje.</div>
-        </div>
-        <div class="amenity-card" data-aos="fade-up" data-aos-delay="420">
-          <div class="amenity-icon">☀️</div>
-          <div class="amenity-title">Ambiente luminoso</div>
-          <div class="amenity-desc">Espacios diseñados para el bienestar, con luz natural y estética cálida y minimalista.</div>
+        <div class="amenity-card" data-aos="fade-up" data-aos-delay="350">
+          <div class="amenity-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+          </div>
+          <h3>Atención personalizada</h3>
+          <p>Siempre disponibles para ayudarte por WhatsApp</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── GALLERY ────────────────────────────────────────────── -->
-  <section id="gallery">
+  <!-- ═══════════════════════════ DEPARTAMENTOS ═══════════════════════════ -->
+  <section class="departamentos" id="departamentos">
     <div class="container">
-      <div class="gallery-header">
-        <div data-aos="fade-right">
-          <span class="section-label">El espacio</span>
-          <h2 class="section-title">Galería</h2>
-        </div>
-        <p class="section-subtitle" data-aos="fade-left" style="text-align:right;">
-          Dos departamentos cálidos y luminosos, diseñados para el descanso.
-        </p>
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-eyebrow">Nuestros espacios</p>
+        <h2 class="section-title">Elegí tu estilo</h2>
+        <p class="section-sub">Dos departamentos con personalidades únicas, el mismo nivel de confort y atención.</p>
       </div>
 
-      <div class="gallery-grid" data-aos="fade-up" data-aos-delay="100">
-        <div class="gallery-item">
-          <div class="gallery-placeholder">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-            <span>Foto principal</span>
+      <div class="dept-tabs" data-aos="fade-up" data-aos-delay="100">
+        <button class="dept-tab active" data-tab="calma1">
+          <span class="dept-tab-num">01</span>
+          <span class="dept-tab-info">
+            <span class="dept-tab-name">Calma 1</span>
+            <span class="dept-tab-sub">Loft · Estilo industrial</span>
+          </span>
+        </button>
+        <button class="dept-tab" data-tab="calma2">
+          <span class="dept-tab-num">02</span>
+          <span class="dept-tab-info">
+            <span class="dept-tab-name">Calma 2</span>
+            <span class="dept-tab-sub">Boho · Natural</span>
+          </span>
+        </button>
+      </div>
+
+      <!-- CALMA 1 -->
+      <div class="dept-panel active" id="calma1" data-aos="fade-up">
+        <div class="dept-layout">
+          <div class="dept-gallery">
+            <div class="dept-gallery-main">
+              <img src="images/aloj1/IMG_6418.JPG" alt="Calma 1" id="calma1-main-img" />
+            </div>
+            <div class="dept-gallery-grid">
+              <button class="dept-thumb active" data-main="images/aloj1/IMG_6418.JPG" data-target="calma1-main-img">
+                <img src="images/aloj1/IMG_6418.JPG" alt="Sala" />
+              </button>
+              <button class="dept-thumb" data-main="images/aloj1/IMG_0276.JPG" data-target="calma1-main-img">
+                <img src="images/aloj1/IMG_0276.JPG" alt="Ambiente" />
+              </button>
+              <button class="dept-thumb" data-main="images/aloj1/IMG_0281.JPG" data-target="calma1-main-img">
+                <img src="images/aloj1/IMG_0281.JPG" alt="Detalle" />
+              </button>
+              <button class="dept-thumb" data-main="images/aloj1/IMG_6708.JPG" data-target="calma1-main-img">
+                <img src="images/aloj1/IMG_6708.JPG" alt="Dormitorio" />
+              </button>
+              <button class="dept-thumb" data-main="images/aloj1/IMG_6712.JPG" data-target="calma1-main-img">
+                <img src="images/aloj1/IMG_6712.JPG" alt="Cocina" />
+              </button>
+              <button class="dept-thumb" data-main="images/aloj1/IMG_8261.JPG" data-target="calma1-main-img">
+                <img src="images/aloj1/IMG_8261.JPG" alt="Baño" />
+              </button>
+              <button class="dept-thumb" data-main="images/aloj1/IMG_8286.JPG" data-target="calma1-main-img">
+                <img src="images/aloj1/IMG_8286.JPG" alt="Vista" />
+              </button>
+              <button class="dept-thumb" data-main="images/aloj1/IMG_8636.JPG" data-target="calma1-main-img">
+                <img src="images/aloj1/IMG_8636.JPG" alt="Detalle 2" />
+              </button>
+            </div>
           </div>
-        </div>
-        <div class="gallery-item">
-          <div class="gallery-placeholder">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-            <span>Dormitorio</span>
-          </div>
-        </div>
-        <div class="gallery-item">
-          <div class="gallery-placeholder">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-            <span>Cocina</span>
-          </div>
-        </div>
-        <div class="gallery-item">
-          <div class="gallery-placeholder">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-            <span>Living</span>
-          </div>
-        </div>
-        <div class="gallery-item">
-          <div class="gallery-placeholder">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-            <span>Baño</span>
+          <div class="dept-info">
+            <div class="dept-badge">Calma 1</div>
+            <h3 class="dept-name">Loft de estilo industrial</h3>
+            <p class="dept-desc">Un espacio de doble altura con ladrillo visto, vigas de madera y paleta de colores neutros. La luz natural entra por grandes ventanales creando una atmósfera cálida y contemporánea. Ideal para parejas o viajeros que buscan carácter y confort en partes iguales.</p>
+            <ul class="dept-features">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                Capacidad para 2 personas
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                Cama queen premium
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                Cocina completa equipada
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                Baño con ducha de lluvia
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                Smart TV + Netflix
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                Wi-Fi de alta velocidad
+              </li>
+            </ul>
+            <a href="https://wa.me/5492235207220?text=Hola!%20Me%20interesa%20reservar%20Calma%201" class="btn btn-primary btn-wa" target="_blank">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+              Consultar disponibilidad
+            </a>
           </div>
         </div>
       </div>
+
+      <!-- CALMA 2 -->
+      <div class="dept-panel" id="calma2">
+        <div class="dept-layout">
+          <div class="dept-gallery">
+            <div class="dept-gallery-main">
+              <img src="images/aloj2/IMG_4345.JPG" alt="Calma 2" id="calma2-main-img" />
+            </div>
+            <div class="dept-gallery-grid">
+              <button class="dept-thumb active" data-main="images/aloj2/IMG_4345.JPG" data-target="calma2-main-img">
+                <img src="images/aloj2/IMG_4345.JPG" alt="Sala" />
+              </button>
+              <button class="dept-thumb" data-main="images/aloj2/IMG_2966.JPG" data-target="calma2-main-img">
+                <img src="images/aloj2/IMG_2966.JPG" alt="Ambiente" />
+              </button>
+              <button class="dept-thumb" data-main="images/aloj2/IMG_4246.JPG" data-target="calma2-main-img">
+                <img src="images/aloj2/IMG_4246.JPG" alt="Detalle" />
+              </button>
+              <button class="dept-thumb" data-main="images/aloj2/IMG_4354.JPG" data-target="calma2-main-img">
+                <img src="images/aloj2/IMG_4354.JPG" alt="Dormitorio" />
+              </button>
+              <button class="dept-thumb" data-main="images/aloj2/IMG_4392.JPG" data-target="calma2-main-img">
+                <img src="images/aloj2/IMG_4392.JPG" alt="Cocina" />
+              </button>
+              <button class="dept-thumb" data-main="images/aloj2/IMG_4702.JPG" data-target="calma2-main-img">
+                <img src="images/aloj2/IMG_4702.JPG" alt="Exterior" />
+              </button>
+              <button class="dept-thumb" data-main="images/aloj2/IMG_4704.JPG" data-target="calma2-main-img">
+                <img src="images/aloj2/IMG_4704.JPG" alt="Vista" />
+              </button>
+            </div>
+          </div>
+          <div class="dept-info">
+            <div class="dept-badge dept-badge-2">Calma 2</div>
+            <h3 class="dept-name">Estilo boho natural</h3>
+            <p class="dept-desc">Texturas naturales, plantas verdes y una paleta de beige y tierra que invita a desconectarse. Un departamento que mezcla lo rústico con lo contemporáneo, con mucha luz y una sensación de calidez única. El rincón perfecto para recargar energías.</p>
+            <ul class="dept-features">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                Capacidad para 2 personas
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                Cama doble con ropa de cama natural
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                Cocina completa equipada
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                Baño con accesorios naturales
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                Smart TV + Netflix
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                Wi-Fi de alta velocidad
+              </li>
+            </ul>
+            <a href="https://wa.me/5492235207220?text=Hola!%20Me%20interesa%20reservar%20Calma%202" class="btn btn-primary btn-wa" target="_blank">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+              Consultar disponibilidad
+            </a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <!-- ── LOCATION ───────────────────────────────────────────── -->
-  <section id="location">
+  <!-- ═══════════════════════════ UBICACION ═══════════════════════════ -->
+  <section class="location" id="ubicacion">
     <div class="container">
       <div class="location-grid">
-        <div data-aos="fade-right">
-          <span class="section-label">Cómo llegar</span>
-          <h2 class="section-title">Ubicación</h2>
-          <p class="location-address">📍 Falucho y Arenales, Mar del Plata</p>
-          <p class="location-desc">
-            En plena zona céntrica de Mar del Plata, a dos cuadras de la avenida principal y de los puntos más emblemáticos de la ciudad. Podés llegar caminando a todo.
-          </p>
-          <div class="location-highlights">
-            <div class="location-highlight"><div class="dot"></div> 2 cuadras de la Av. Colón</div>
-            <div class="location-highlight"><div class="dot"></div> 2 cuadras del Casino Central</div>
-            <div class="location-highlight"><div class="dot"></div> 2 cuadras de la rambla de los lobos marinos</div>
-            <div class="location-highlight"><div class="dot"></div> Cerca del shopping Aldrey</div>
-            <div class="location-highlight"><div class="dot"></div> A pasos del paseo Güemes</div>
-          </div>
+        <div class="location-text" data-aos="fade-right">
+          <p class="section-eyebrow">Ubicación</p>
+          <h2 class="section-title">En el corazón de Los Troncos</h2>
+          <p>Falucho y Arenales, a metros de la playa Grande y rodeados de los mejores lugares de Mar del Plata. Todo a pie.</p>
+          <ul class="location-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>5 min caminando a la playa Grande</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>Restaurantes y cafés a metros</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>Estacionamiento en la zona</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>Fácil acceso desde Ruta 2 y terminal</span>
+            </li>
+          </ul>
+          <a href="https://maps.google.com/?q=Falucho+y+Arenales,+Mar+del+Plata" target="_blank" class="btn btn-outline" style="margin-top:1.5rem">Ver en Google Maps</a>
         </div>
-
-        <div class="map-wrap" data-aos="fade-left" data-aos-delay="100">
+        <div class="location-map" data-aos="fade-left" data-aos-delay="100">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3141.0!2d-57.5467!3d-38.0023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584d8b1e5b9c3d7%3A0x1!2sFalucho%20y%20Arenales%2C%20Mar%20del%20Plata!5e0!3m2!1ses!2sar!4v1"
-            allowfullscreen
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.5!2d-57.5436!3d-38.0023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584da07b4cc92b3%3A0xd2ab84d53c96ba!2sFalucho%20%26%20Arenales%2C%20Mar%20del%20Plata!5e0!3m2!1ses!2sar!4v1234567890"
+            allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
             title="Ubicación Alojamiento Calma">
@@ -278,71 +389,77 @@
     </div>
   </section>
 
-  <!-- ── BOOKING ────────────────────────────────────────────── -->
-  <section id="booking">
-    <div class="container">
-      <span class="section-label" data-aos="fade-up">Reservas</span>
-      <h2 class="section-title" data-aos="fade-up" data-aos-delay="50">¿Listo para escaparte?</h2>
-      <p class="booking-subtitle" data-aos="fade-up" data-aos-delay="100">
-        Consultá disponibilidad y reservá directo por WhatsApp. Respondemos rápido y sin vueltas.
-      </p>
-
-      <div class="booking-card" data-aos="zoom-in" data-aos-delay="150">
-        <p>Contanos tus fechas, cuántas personas viajan y cualquier consulta que tengas. ¡Estamos para ayudarte!</p>
-        <!-- ⚠️ REEMPLAZAR el número de WhatsApp (el 5492231234567) por el número real -->
-        <a href="https://wa.me/5492231234567?text=Hola!%20Quiero%20consultar%20disponibilidad%20en%20Alojamiento%20Calma%20🌊" class="btn-whatsapp" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.523 5.849L0 24l6.335-1.491A11.938 11.938 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.006-1.369l-.359-.214-3.724.876.916-3.638-.234-.374A9.818 9.818 0 1 1 12 21.818z"/></svg>
-          Chatear por WhatsApp
-        </a>
-        <p class="booking-note">Disponibilidad confirmada en minutos · Pago seguro y flexible</p>
-      </div>
+  <!-- ═══════════════════════════ RESERVAR ═══════════════════════════ -->
+  <section class="booking" id="reservar">
+    <div class="booking-bg">
+      <img src="images/mdp/IMG_4058.jpg" alt="Mar del Plata" />
+    </div>
+    <div class="booking-overlay"></div>
+    <div class="booking-content" data-aos="fade-up">
+      <p class="section-eyebrow" style="color:var(--gold-light)">¿Listo para reservar?</p>
+      <h2 class="section-title" style="color:var(--white)">Tu estadía en Calma<br />está a un mensaje</h2>
+      <p style="color:rgba(255,255,255,.8);max-width:500px;margin:0 auto 2.5rem">Escribinos por WhatsApp y te respondemos al instante. Contamos disponibilidad, precios y todo lo que necesitás saber.</p>
+      <a href="https://wa.me/5492235207220?text=Hola!%20Me%20gustar%C3%ADa%20consultar%20disponibilidad%20en%20Alojamiento%20Calma" class="btn btn-wa-big" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        Escribir por WhatsApp
+      </a>
     </div>
   </section>
 
-  <!-- ── FOOTER ─────────────────────────────────────────────── -->
-  <footer>
+  <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+  <footer class="footer">
     <div class="container">
-      <div class="footer-inner">
-        <a href="#hero" class="footer-logo">
-          <svg class="triskelion" viewBox="0 0 100 100"><path d="M50 50 C50 50 50 28 62 22 C74 16 84 26 78 38 C72 50 58 46 50 50 C50 50 68 58 68 72 C68 86 54 90 46 80 C38 70 46 56 50 50 C50 50 32 56 22 46 C12 36 20 22 34 24 C48 26 48 42 50 50Z" fill-rule="evenodd"/></svg>
-          <div class="footer-logo-text">
-            calma <span>alojamiento · mar del plata</span>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/logo.png" alt="Alojamiento Calma" class="footer-logo-img" />
+          <p>Dos departamentos únicos en Mar del Plata. Diseñados para que te sientas en casa.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/alojamientocalma.mdp/" target="_blank" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
           </div>
-        </a>
-
-        <ul class="footer-links">
-          <li><a href="#about">Nosotros</a></li>
-          <li><a href="#amenities">Comodidades</a></li>
-          <li><a href="#gallery">Galería</a></li>
-          <li><a href="#location">Ubicación</a></li>
-          <li><a href="#booking">Reservar</a></li>
-        </ul>
-
-        <div class="footer-social">
-          <!-- Instagram -->
-          <a href="https://www.instagram.com/alojamientocalma.mdp/" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram">
-            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-          </a>
         </div>
-
-        <p class="footer-copy">© 2025 Alojamiento Calma · Mar del Plata, Argentina</p>
+        <div class="footer-nav">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#departamentos">Departamentos</a></li>
+            <li><a href="#ubicacion">Ubicación</a></li>
+            <li><a href="#reservar">Reservar</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contacto</h4>
+          <ul>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Falucho y Arenales, Mar del Plata
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+              WhatsApp disponible 24/7
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+              @alojamientocalma.mdp
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Alojamiento Calma · Mar del Plata · Todos los derechos reservados</p>
       </div>
     </div>
   </footer>
 
-  <!-- ── FLOATING WA BUTTON ─────────────────────────────────── -->
-  <!-- ⚠️ REEMPLAZAR el número de WhatsApp -->
-  <a href="https://wa.me/5492231234567?text=Hola!%20Quiero%20consultar%20disponibilidad%20en%20Alojamiento%20Calma%20🌊"
-     class="wa-float"
-     target="_blank"
-     rel="noopener"
-     aria-label="WhatsApp">
-    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.523 5.849L0 24l6.335-1.491A11.938 11.938 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.006-1.369l-.359-.214-3.724.876.916-3.638-.234-.374A9.818 9.818 0 1 1 12 21.818z"/></svg>
+  <!-- ═══════════════════════════ FLOATING WA ═══════════════════════════ -->
+  <a href="https://wa.me/5492235207220?text=Hola!%20Me%20gustar%C3%ADa%20consultar%20disponibilidad%20en%20Alojamiento%20Calma" class="float-wa" target="_blank" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
   </a>
 
-  <!-- AOS -->
+  <!-- AOS + Script -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <!-- Scripts propios -->
   <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alojamiento Calma — Mar del Plata</title>
+  <meta name="description" content="Departamentos para 2 personas en el corazón de Mar del Plata. Ambiente cálido, minimalista y equipado al detalle. Reservas por WhatsApp." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="styles.css" />
+
+</head>
+<body>
+
+  <!-- ── NAVBAR ─────────────────────────────────────────────── -->
+  <nav id="navbar">
+    <div class="container nav-inner">
+      <a href="#hero" class="nav-logo">
+        <!-- Triskelion SVG -->
+        <svg class="triskelion" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <path d="M50 50
+            C50 50 50 28 62 22 C74 16 84 26 78 38 C72 50 58 46 50 50
+            C50 50 68 58 68 72 C68 86 54 90 46 80 C38 70 46 56 50 50
+            C50 50 32 56 22 46 C12 36 20 22 34 24 C48 26 48 42 50 50Z"
+            fill-rule="evenodd"/>
+        </svg>
+        <div class="nav-logo-text">
+          calma<span>alojamiento · mdp</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">Nosotros</a></li>
+        <li><a href="#amenities">Comodidades</a></li>
+        <li><a href="#gallery">Galería</a></li>
+        <li><a href="#location">Ubicación</a></li>
+        <li><a href="#booking" class="nav-cta">Reservar</a></li>
+      </ul>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── HERO ───────────────────────────────────────────────── -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        Mar del Plata, Argentina
+      </div>
+      <h1 class="hero-title">Alojamiento<br><em>Calma</em></h1>
+      <p class="hero-tagline">Tu refugio frente al mar</p>
+      <div class="hero-actions">
+        <a href="#booking" class="btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M5.077 19.877c.247 0 .495-.024.741-.072 1.38-.27 2.573-.969 3.46-1.908l.075-.08c.198-.21.396-.42.569-.638.18-.22.347-.443.5-.668a8.36 8.36 0 0 0 .447-.748c.545-1.073.82-2.284.82-3.567 0-4.463-3.63-8.093-8.093-8.093-4.462 0-8.092 3.63-8.092 8.093 0 1.395.362 2.758 1.048 3.956l-1.098 3.938a.502.502 0 0 0 .619.62l3.979-1.058a8.08 8.08 0 0 0 4.025 1.224z" opacity=".3"/></svg>
+          Reservar por WhatsApp
+        </a>
+        <a href="#about" class="btn-secondary">
+          Conocer más
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ── STATS ───────────────────────────────────────────────── -->
+  <div id="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="0">
+          <div class="stat-number">2</div>
+          <div class="stat-label">Departamentos</div>
+        </div>
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="80">
+          <div class="stat-number">2</div>
+          <div class="stat-label">Personas máx.</div>
+        </div>
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="160">
+          <div class="stat-number">2+</div>
+          <div class="stat-label">Cuadras al mar</div>
+        </div>
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="240">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Equipado</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── ABOUT ──────────────────────────────────────────────── -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual" data-aos="fade-right">
+          <div class="about-img-main">
+            <div class="gallery-placeholder" style="height:100%">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              <span>Foto del depto</span>
+            </div>
+          </div>
+          <div class="about-img-accent">
+            <div class="gallery-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            </div>
+          </div>
+          <span class="about-pill-badge">✦ Mar del Plata</span>
+        </div>
+
+        <div class="about-text" data-aos="fade-left" data-aos-delay="100">
+          <span class="section-label">Sobre nosotros</span>
+          <h2 class="section-title">Un espacio pensado para vos</h2>
+          <blockquote class="about-quote">
+            "Llegar, descansar y desconectarse del ruido del mundo."
+          </blockquote>
+          <p class="about-body">
+            Alojamiento Calma son dos departamentos diseñados para parejas que buscan una escapada tranquila en el corazón de Mar del Plata. Espacios luminosos, minimalistas y cálidos, con todo lo que necesitás para sentirte como en casa — o mejor.
+          </p>
+          <p class="about-body">
+            A dos cuadras del Casino Central, de la rambla de los lobos marinos y de la Av. Colón. A pocos pasos del shopping Aldrey y el paseo Güemes. Todo cerca, sin el ruido del caos.
+          </p>
+          <div class="about-chips">
+            <span class="chip">🌊 A metros del mar</span>
+            <span class="chip">☀️ Luminoso</span>
+            <span class="chip">🤍 Minimalista</span>
+            <span class="chip">🔑 Check-in flexible</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── AMENITIES ──────────────────────────────────────────── -->
+  <section id="amenities">
+    <div class="container">
+      <div class="amenities-header" data-aos="fade-up">
+        <span class="section-label">Todo incluido</span>
+        <h2 class="section-title">Comodidades</h2>
+        <p class="section-subtitle">Cada detalle pensado para que no te falte nada durante tu estadía.</p>
+      </div>
+
+      <div class="amenities-grid">
+        <div class="amenity-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="amenity-icon">🛏️</div>
+          <div class="amenity-title">Cama doble</div>
+          <div class="amenity-desc">Cama de dos plazas con sábanas y toallones de calidad incluidos.</div>
+        </div>
+        <div class="amenity-card" data-aos="fade-up" data-aos-delay="60">
+          <div class="amenity-icon">🍳</div>
+          <div class="amenity-title">Cocina equipada</div>
+          <div class="amenity-desc">Heladera, horno, microondas, tostadora, pava eléctrica, cafetera y vajilla completa.</div>
+        </div>
+        <div class="amenity-card" data-aos="fade-up" data-aos-delay="120">
+          <div class="amenity-icon">📺</div>
+          <div class="amenity-title">Smart TV 39"</div>
+          <div class="amenity-desc">Con Netflix, Disney+, HBO Max y todas las plataformas de streaming.</div>
+        </div>
+        <div class="amenity-card" data-aos="fade-up" data-aos-delay="180">
+          <div class="amenity-icon">🥐</div>
+          <div class="amenity-title">Desayuno de bienvenida</div>
+          <div class="amenity-desc">Arribás y te esperamos con desayuno o merienda de bienvenida lista.</div>
+        </div>
+        <div class="amenity-card" data-aos="fade-up" data-aos-delay="240">
+          <div class="amenity-icon">🚿</div>
+          <div class="amenity-title">Baño completo</div>
+          <div class="amenity-desc">Secador de pelo, shampoo, acondicionador, jabón y discos de algodón.</div>
+        </div>
+        <div class="amenity-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="amenity-icon">📶</div>
+          <div class="amenity-title">WiFi de alta velocidad</div>
+          <div class="amenity-desc">Conexión estable para que puedas trabajar o conectarte sin problemas.</div>
+        </div>
+        <div class="amenity-card" data-aos="fade-up" data-aos-delay="360">
+          <div class="amenity-icon">🎲</div>
+          <div class="amenity-title">Juegos de mesa</div>
+          <div class="amenity-desc">Para esas noches adentro que terminan siendo las mejores del viaje.</div>
+        </div>
+        <div class="amenity-card" data-aos="fade-up" data-aos-delay="420">
+          <div class="amenity-icon">☀️</div>
+          <div class="amenity-title">Ambiente luminoso</div>
+          <div class="amenity-desc">Espacios diseñados para el bienestar, con luz natural y estética cálida y minimalista.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── GALLERY ────────────────────────────────────────────── -->
+  <section id="gallery">
+    <div class="container">
+      <div class="gallery-header">
+        <div data-aos="fade-right">
+          <span class="section-label">El espacio</span>
+          <h2 class="section-title">Galería</h2>
+        </div>
+        <p class="section-subtitle" data-aos="fade-left" style="text-align:right;">
+          Dos departamentos cálidos y luminosos, diseñados para el descanso.
+        </p>
+      </div>
+
+      <div class="gallery-grid" data-aos="fade-up" data-aos-delay="100">
+        <div class="gallery-item">
+          <div class="gallery-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            <span>Foto principal</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            <span>Dormitorio</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            <span>Cocina</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            <span>Living</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            <span>Baño</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── LOCATION ───────────────────────────────────────────── -->
+  <section id="location">
+    <div class="container">
+      <div class="location-grid">
+        <div data-aos="fade-right">
+          <span class="section-label">Cómo llegar</span>
+          <h2 class="section-title">Ubicación</h2>
+          <p class="location-address">📍 Falucho y Arenales, Mar del Plata</p>
+          <p class="location-desc">
+            En plena zona céntrica de Mar del Plata, a dos cuadras de la avenida principal y de los puntos más emblemáticos de la ciudad. Podés llegar caminando a todo.
+          </p>
+          <div class="location-highlights">
+            <div class="location-highlight"><div class="dot"></div> 2 cuadras de la Av. Colón</div>
+            <div class="location-highlight"><div class="dot"></div> 2 cuadras del Casino Central</div>
+            <div class="location-highlight"><div class="dot"></div> 2 cuadras de la rambla de los lobos marinos</div>
+            <div class="location-highlight"><div class="dot"></div> Cerca del shopping Aldrey</div>
+            <div class="location-highlight"><div class="dot"></div> A pasos del paseo Güemes</div>
+          </div>
+        </div>
+
+        <div class="map-wrap" data-aos="fade-left" data-aos-delay="100">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3141.0!2d-57.5467!3d-38.0023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584d8b1e5b9c3d7%3A0x1!2sFalucho%20y%20Arenales%2C%20Mar%20del%20Plata!5e0!3m2!1ses!2sar!4v1"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Ubicación Alojamiento Calma">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── BOOKING ────────────────────────────────────────────── -->
+  <section id="booking">
+    <div class="container">
+      <span class="section-label" data-aos="fade-up">Reservas</span>
+      <h2 class="section-title" data-aos="fade-up" data-aos-delay="50">¿Listo para escaparte?</h2>
+      <p class="booking-subtitle" data-aos="fade-up" data-aos-delay="100">
+        Consultá disponibilidad y reservá directo por WhatsApp. Respondemos rápido y sin vueltas.
+      </p>
+
+      <div class="booking-card" data-aos="zoom-in" data-aos-delay="150">
+        <p>Contanos tus fechas, cuántas personas viajan y cualquier consulta que tengas. ¡Estamos para ayudarte!</p>
+        <!-- ⚠️ REEMPLAZAR el número de WhatsApp (el 5492231234567) por el número real -->
+        <a href="https://wa.me/5492231234567?text=Hola!%20Quiero%20consultar%20disponibilidad%20en%20Alojamiento%20Calma%20🌊" class="btn-whatsapp" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.523 5.849L0 24l6.335-1.491A11.938 11.938 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.006-1.369l-.359-.214-3.724.876.916-3.638-.234-.374A9.818 9.818 0 1 1 12 21.818z"/></svg>
+          Chatear por WhatsApp
+        </a>
+        <p class="booking-note">Disponibilidad confirmada en minutos · Pago seguro y flexible</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────────────────── -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <a href="#hero" class="footer-logo">
+          <svg class="triskelion" viewBox="0 0 100 100"><path d="M50 50 C50 50 50 28 62 22 C74 16 84 26 78 38 C72 50 58 46 50 50 C50 50 68 58 68 72 C68 86 54 90 46 80 C38 70 46 56 50 50 C50 50 32 56 22 46 C12 36 20 22 34 24 C48 26 48 42 50 50Z" fill-rule="evenodd"/></svg>
+          <div class="footer-logo-text">
+            calma <span>alojamiento · mar del plata</span>
+          </div>
+        </a>
+
+        <ul class="footer-links">
+          <li><a href="#about">Nosotros</a></li>
+          <li><a href="#amenities">Comodidades</a></li>
+          <li><a href="#gallery">Galería</a></li>
+          <li><a href="#location">Ubicación</a></li>
+          <li><a href="#booking">Reservar</a></li>
+        </ul>
+
+        <div class="footer-social">
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/alojamientocalma.mdp/" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+        </div>
+
+        <p class="footer-copy">© 2025 Alojamiento Calma · Mar del Plata, Argentina</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── FLOATING WA BUTTON ─────────────────────────────────── -->
+  <!-- ⚠️ REEMPLAZAR el número de WhatsApp -->
+  <a href="https://wa.me/5492231234567?text=Hola!%20Quiero%20consultar%20disponibilidad%20en%20Alojamiento%20Calma%20🌊"
+     class="wa-float"
+     target="_blank"
+     rel="noopener"
+     aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.523 5.849L0 24l6.335-1.491A11.938 11.938 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 0 1-5.006-1.369l-.359-.214-3.724.876.916-3.638-.234-.374A9.818 9.818 0 1 1 12 21.818z"/></svg>
+  </a>
+
+  <!-- AOS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <!-- Scripts propios -->
+  <script src="script.js"></script>
+</body>
+</html>

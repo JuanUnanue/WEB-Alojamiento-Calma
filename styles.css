@@ -416,17 +416,29 @@ section { padding: 100px 0; }
   font-size: .78rem; color: rgba(255,255,255,.25);
 }
 
-/* ── Floating WA button ───────────────────────────────────── */
-.float-wa {
-  position: fixed; bottom: 2rem; right: 2rem; z-index: 999;
-  width: 56px; height: 56px; background: #25D366;
-  border-radius: 50%; display: flex; align-items: center;
-  justify-content: center; box-shadow: 0 4px 20px rgba(37,211,102,.5);
+/* ── Floating buttons ─────────────────────────────────────── */
+.float-wa, .float-ig {
+  position: fixed; right: 2rem; z-index: 999;
+  width: 56px; height: 56px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
   transition: transform .3s, box-shadow .3s;
+}
+.float-wa {
+  bottom: 2rem;
+  background: #25D366;
+  box-shadow: 0 4px 20px rgba(37,211,102,.5);
   animation: waPop .5s 2s both;
 }
 .float-wa svg { width: 28px; height: 28px; fill: var(--white); }
 .float-wa:hover { transform: scale(1.1); box-shadow: 0 8px 28px rgba(37,211,102,.6); }
+.float-ig {
+  bottom: 6.5rem;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  box-shadow: 0 4px 20px rgba(214,36,159,.4);
+  animation: waPop .5s 2.2s both;
+}
+.float-ig svg { width: 26px; height: 26px; stroke: var(--white); }
+.float-ig:hover { transform: scale(1.1); box-shadow: 0 8px 28px rgba(214,36,159,.5); }
 
 /* ── Keyframes ───────────────────────────────────────────── */
 @keyframes fadeUp { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
